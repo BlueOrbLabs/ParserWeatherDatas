@@ -1,5 +1,8 @@
 <?php
 
+/*
+ * Ouvrir et traiter les fichiers .txt
+ */
 class Parser {
 
     /*
@@ -10,7 +13,7 @@ class Parser {
     
     private $dirname;
 
-    function __construct($dirname = 'raw', $filename = 'clientraw') {
+    public function __construct($dirname = 'raw', $filename = 'clientraw') {
         $this->filename = $filename;
         $this->dirname = $dirname;
     }

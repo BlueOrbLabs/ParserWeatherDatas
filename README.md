@@ -5,26 +5,25 @@ Analyseur de données météo et enregistrement dans BDD.
 
 1. **Inclure le fichier de connexion**
 
-        include('sqlConnect.php');
+        require 'app/config.php';
 
 2. **Configurer le base**
 
-    Mettre vos informations de connexion dans le fichier config.php
+    Mettre vos informations de connexion dans le fichier dev.php pour le localhost, et prod.php pour la BD distante.
+    Dans le fichier config.php configurer la variable $env : Mettre 'local' ou 'distant'
 
 ## Utilisation
 Respecter la structure des dossiers:
 
     /root-  
+        |_/app  
+            |_/class  
+                |_Parser.php  
+                |_Injector.php  
         |_/raw  
-        |   |_clientraw.txt  
-        |_Parser.php  
-        |_index.php  
+            |_clientraw.txt  
 
-1. **Inclure le fichier Parser.php dans votre index.php (ou autre)**
-
-        include('Parser.php');
-
-2. **Exécuter la Classe et lancer le traitement du fichier**
+1. **Exécuter la Classe et lancer le traitement du fichier**
 
          $parser = new Parser();
          $datas = $parser->getContent();
@@ -37,7 +36,7 @@ Respecter la structure des dossiers:
 
         new Parser('raw', 'clientraw');
 
-3. **Afficher le résultats, une simple boucle foreach() car la Classe retourne un Array()**
+2. **Afficher le résultats, une simple boucle foreach() car la Classe retourne un Array()**
 
     *Exemple :*
 

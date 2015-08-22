@@ -1,5 +1,4 @@
-<?php include('sqlConnect.php'); ?>
-<?php include('Parser.php'); ?>
+<?php require 'app/config.php'; ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -17,12 +16,16 @@
             <?php
             $parser = new Parser();
             $datas = $parser->getContent();
+
             foreach ($datas as $data) {
                 echo $data."<br />";
             }
-            if($db) {
-                echo 'connexion ok';
-            }
+            /*
+            $injector = new Injector($db);
+            $datas = $injector->findAll();
+            var_dump($datas);
+             * 
+             */
             ?>
         </div>
         <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
