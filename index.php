@@ -1,4 +1,5 @@
 <?php include('config.php'); ?>
+<?php include('Parser.php'); ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,7 +13,13 @@
             <div class="page-header">
                 <h1>Parser weatherdata <small>clientraw.txt</small></h1>
             </div>
-            <?php include('parser.php'); ?>
+            <?php
+            $parser = new Parser();
+            $datas = $parser->getContent();
+            foreach ($datas as $data) {
+                echo $data."<br />";
+            }
+            ?>
         </div>
         <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
