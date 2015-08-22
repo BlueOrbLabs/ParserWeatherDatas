@@ -11,25 +11,26 @@ Respecter la structure des dossiers:
         |_Parser.php  
         |_index.php  
 
-1. Inclure le fichier Parser.php dans votre index.php (ou autre)
+1. **Inclure le fichier Parser.php dans votre index.php (ou autre)**
 
-        <?php include('Parser.php'); ?>
+        nclude('Parser.php');
 
 Pour exécuter la Classe et lancer le traitement du fichier
 
          $parser = new Parser();
          $datas = $parser->getContent();
 
-Par défaut le Classe est configurée avec un nom de fichier : 'raw/clientraw.txt'
-Pour changer de nom de fichier, il faut passer un argument à la Classe de type string : 'dossier/fichier' (sans le .txt)
+La Classe Parser() accepte deux arguments(falcultatif) pour modifier le nom du répertoire et/ou fichier :
 
-    <?php
-        $parser = new Parser('raw/newname');
-        ...
-    ?>
+        new Parser('dirname', 'filename');
 
-2. Afficher le résultats, une simple boucle foreach() car la Classe retourne un Array().
-Exemple :
+Configuration par défaut :
+
+        new Parser('raw', 'clientraw');
+
+2. **Afficher le résultats, une simple boucle foreach() car la Classe retourne un Array()**
+
+*Exemple :*
 
         foreach ($datas as $data) {
              echo $data."<br />";
