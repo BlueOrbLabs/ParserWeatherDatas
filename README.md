@@ -1,6 +1,15 @@
 # ParserWeatherDatas
 Analyseur de données météo et enregistrement dans BDD.
 
+## Connexion BDD
+
+1. **Inclure le fichier de connexion**
+
+        include('sqlConnect.php');
+
+2. **Configurer le base**
+
+    Mettre vos informations de connexion dans le fichier config.php
 
 ## Utilisation
 Respecter la structure des dossiers:
@@ -13,7 +22,7 @@ Respecter la structure des dossiers:
 
 1. **Inclure le fichier Parser.php dans votre index.php (ou autre)**
 
-        nclude('Parser.php');
+        include('Parser.php');
 
 2. **Exécuter la Classe et lancer le traitement du fichier**
 
@@ -30,7 +39,7 @@ Respecter la structure des dossiers:
 
 3. **Afficher le résultats, une simple boucle foreach() car la Classe retourne un Array()**
 
-*Exemple :*
+    *Exemple :*
 
         foreach ($datas as $data) {
              echo $data."<br />";

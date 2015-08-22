@@ -1,4 +1,4 @@
-<?php include('config.php'); ?>
+<?php include('sqlConnect.php'); ?>
 <?php include('Parser.php'); ?>
 <!DOCTYPE html>
 <html>
@@ -13,11 +13,15 @@
             <div class="page-header">
                 <h1>Parser weatherdata <small>clientraw.txt</small></h1>
             </div>
+            
             <?php
             $parser = new Parser();
             $datas = $parser->getContent();
             foreach ($datas as $data) {
                 echo $data."<br />";
+            }
+            if($db) {
+                echo 'connexion ok';
             }
             ?>
         </div>
