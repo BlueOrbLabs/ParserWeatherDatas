@@ -4,11 +4,12 @@ Analyseur de données météo et enregistrement dans BDD.
 
 ## Utilisation
 Respecter la structure des dossiers:
-/root-  
-    |_/raw  
-    |   |_clientraw.txt  
-    |_Parser.php  
-    |_index.php  
+
+    /root-  
+        |_/raw  
+        |   |_clientraw.txt  
+        |_Parser.php  
+        |_index.php  
 
 Inclure le fichier Parser.php dans votre index.php (ou autre)
 
