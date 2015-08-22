@@ -15,20 +15,20 @@ Respecter la structure des dossiers:
 
         nclude('Parser.php');
 
-Pour exécuter la Classe et lancer le traitement du fichier
+2. **Exécuter la Classe et lancer le traitement du fichier**
 
          $parser = new Parser();
          $datas = $parser->getContent();
 
-La Classe Parser() accepte deux arguments(falcultatif) pour modifier le nom du répertoire et/ou fichier :
+    La Classe Parser() accepte deux arguments(falcultatif) pour modifier le nom du répertoire et/ou fichier :
 
         new Parser('dirname', 'filename');
 
-Configuration par défaut :
+    Configuration par défaut :
 
         new Parser('raw', 'clientraw');
 
-2. **Afficher le résultats, une simple boucle foreach() car la Classe retourne un Array()**
+3. **Afficher le résultats, une simple boucle foreach() car la Classe retourne un Array()**
 
 *Exemple :*
 
