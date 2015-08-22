@@ -7,9 +7,12 @@ class Parser {
      * Default value 'clientraw'
      */
     private $filename;
+    
+    private $dirname;
 
-    function __construct($filename = 'raw/clientraw') {
+    function __construct($dirname = 'raw', $filename = 'clientraw') {
         $this->filename = $filename;
+        $this->dirname = $dirname;
     }
 
     /*
@@ -35,7 +38,7 @@ class Parser {
      * Ouverture du fichier
      */
     public function open() {
-        return fopen($this->filename.'.txt', "r");
+        return fopen($this->dirname.'/'.$this->filename.'.txt', "r");
     }
 
 }
