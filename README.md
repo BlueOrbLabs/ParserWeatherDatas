@@ -1,6 +1,9 @@
 # ParserWeatherDatas
 Analyseur de données météo et enregistrement dans BDD.
 
+## Releases
+    Version 1.0  
+
 ## Connexion BDD
 
 1. **Inclure le fichier de connexion**
@@ -12,34 +15,39 @@ Analyseur de données météo et enregistrement dans BDD.
     Mettre vos informations de connexion dans le fichier dev.php pour le localhost, et prod.php pour la BD distante.
     Dans le fichier config.php configurer la variable $env : Mettre 'local' ou 'distant'
 
-## Utilisation
-Respecter la structure des dossiers:
+## Les dossiers et fichiers
+Il est préférable de ne pas modifier la structure des dossiers, ni changer les noms des fichiers.
 
     /root-  
-        |_/app  
-            |_/class  
-                |_Parser.php  
-                |_Injector.php  
-        |_/raw  
+        |_/ meteohub  
             |_clientraw.txt  
+        |  
+        |_/ script_recorder  
+            |_/ Doc  
+            |_/ app  
+        |  
+        |_index.php  
+        |_weather_datas.json  
+        |_script_generate_json.php  
+        |_script_record_datas.php  
 
-1. **Exécuter la Classe et lancer le traitement du fichier**
+## Installation
+Placer le dossier "script_recorder" à la racine de votre site ou dans le dossier racine contenant "meteohub" comme l'exmple précédent.
+Il est possible de modifier le nom des fichiers et dossiers en modifiants les arguments passés aux différentes classes, dans les deux fichiers script_[..].php.
 
-         $parser = new Parser();
-         $datas = $parser->getContent();
+Il faudra aussi configurer le fichier app/prod.php et mettre vos identifiants de connexion à la BDD de votre serveur.
 
-    La Classe Parser() accepte deux arguments(falcultatif) pour modifier le nom du répertoire et/ou fichier :
+        app/prod.php = connexion au serveur distant
+        app/dev.php = connexion au serveur localhost
 
-        new Parser('dirname', 'filename');
+Dans le fichier app/config.php à la varaible $env il faudra soit mettre 'prod' ou 'dev' suivant l'environement (prod = distant, dev = local).
 
-    Configuration par défaut :
+        $env = 'prod'; // en mode prod(production) le site est sur l'hébergeur et utilise les informations de connexion de prod.php
 
-        new Parser('raw', 'clientraw');
+## Utilisation
+Programméer une tâche CRON, la faire poiter sur la page **[root]/script_recorder/index.php?send_data=true**
 
-2. **Afficher le résultats, une simple boucle foreach() car la Classe retourne un Array()**
 
-    *Exemple :*
-
-        foreach ($datas as $data) {
-             echo $data."<br />";
-        }
+## Choisir les données utiles
+Pour enlever ou rajouter des données, il faut éditer les ficheir du dossier "fields" ( fields.txt, index.txt, label.txt)
+Et supprimer ou rajouter  les données que vous souhaitez avoir.

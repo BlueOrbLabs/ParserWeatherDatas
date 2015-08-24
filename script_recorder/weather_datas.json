@@ -1,0 +1,292 @@
+{
+    "weather_data": [
+        {
+            "label": "Avg Speed",
+            "index": "1",
+            "field": "average_windspeed",
+            "value": "4.3"
+        },
+        {
+            "label": "Gusts",
+            "index": "2",
+            "field": "gust_windspeed",
+            "value": "6.2"
+        },
+        {
+            "label": "WindDir",
+            "index": "3",
+            "field": "wind_direction",
+            "value": "45"
+        },
+        {
+            "label": "Temp",
+            "index": "4",
+            "field": "temperature",
+            "value": "27.9"
+        },
+        {
+            "label": "Outside Humidity",
+            "index": "5",
+            "field": "outdoor_humidity",
+            "value": "36"
+        },
+        {
+            "label": "Barometer",
+            "index": "6",
+            "field": "barometer",
+            "value": "1019.2"
+        },
+        {
+            "label": "Daily Rain",
+            "index": "7",
+            "field": "daily_rainfall",
+            "value": "0.0"
+        },
+        {
+            "label": "Monthly Rain",
+            "index": "8",
+            "field": "monthly_rainfall",
+            "value": "50.5"
+        },
+        {
+            "label": "Yearly Rain",
+            "index": "9",
+            "field": "yearly_rainfall",
+            "value": "263.5"
+        },
+        {
+            "label": "Rain Rate",
+            "index": "10",
+            "field": "rain_rate",
+            "value": "0.000"
+        },
+        {
+            "label": "Max Rain Rate",
+            "index": "11",
+            "field": "max_rain_rate_curent_day",
+            "value": "0.000"
+        },
+        {
+            "label": "Soil Temp",
+            "index": "14",
+            "field": "soil_temperature",
+            "value": "0.0"
+        },
+        {
+            "label": "Forecast Icon",
+            "index": "15",
+            "field": "forecast_icon",
+            "value": "0"
+        },
+        {
+            "label": "Yesterday Rain",
+            "index": "19",
+            "field": "yesterday_rainfall",
+            "value": "0.0"
+        },
+        {
+            "label": "Extra Temp Sensor 1",
+            "index": "20",
+            "field": "extra_temperature_sensor_2",
+            "value": "21.2"
+        },
+        {
+            "label": "Extra Temp Sensor 2",
+            "index": "21",
+            "field": "extra_temperature_sensor_3",
+            "value": "27.9"
+        },
+        {
+            "label": "Extra Temp Sensor 3",
+            "index": "22",
+            "field": "extra_temperature_sensor_4",
+            "value": "-100.0"
+        },
+        {
+            "label": "Extra Temp Sensor 4",
+            "index": "23",
+            "field": "extra_temperature_sensor_5",
+            "value": "-100.0"
+        },
+        {
+            "label": "Extra Temp Sensor 5",
+            "index": "24",
+            "field": "extra_temperature_sensor_6",
+            "value": "-100.0"
+        },
+        {
+            "label": "Extra Temp Sensor 6",
+            "index": "25",
+            "field": "extra_temperature_sensor_7",
+            "value": "-100.0"
+        },
+        {
+            "label": "Extra Hum Sensor 1",
+            "index": "26",
+            "field": "extra_humidity_2",
+            "value": "-100"
+        },
+        {
+            "label": "Extra Hum Sensor 2",
+            "index": "27",
+            "field": "extra_humidity_3",
+            "value": "38"
+        },
+        {
+            "label": "Extra Hum Sensor 3",
+            "index": "28",
+            "field": "extra_humidity_4",
+            "value": "-100"
+        },
+        {
+            "label": "Hour",
+            "index": "29",
+            "field": "hour",
+            "value": "19"
+        },
+        {
+            "label": "Minute",
+            "index": "30",
+            "field": "minute",
+            "value": "43"
+        },
+        {
+            "label": "Seconds",
+            "index": "31",
+            "field": "second",
+            "value": "17"
+        },
+        {
+            "label": "Solar Reading",
+            "index": "34",
+            "field": "actual_solar_reading",
+            "value": "0"
+        },
+        {
+            "label": "Day",
+            "index": "35",
+            "field": "day",
+            "value": "21"
+        },
+        {
+            "label": "Month",
+            "index": "36",
+            "field": "month",
+            "value": "8"
+        },
+        {
+            "label": "WindChill",
+            "index": "44",
+            "field": "current_windchill",
+            "value": "27.9"
+        },
+        {
+            "label": "Humidex",
+            "index": "45",
+            "field": "current_humidex",
+            "value": "29.9"
+        },
+        {
+            "label": "Max Day Temp",
+            "index": "46",
+            "field": "max_daily_temperature",
+            "value": "30.7"
+        },
+        {
+            "label": "Min Day Temp",
+            "index": "47",
+            "field": "min_daily_temperature",
+            "value": "11.6"
+        },
+        {
+            "label": "Icon Type",
+            "index": "48",
+            "field": "icon_type",
+            "value": "0"
+        },
+        {
+            "label": "Weather Desc",
+            "index": "49",
+            "field": "current_weather_desc",
+            "value": "Dry"
+        },
+        {
+            "label": "Baro Trend",
+            "index": "50",
+            "field": "barometer_trend_last_hour",
+            "value": "0.0"
+        },
+        {
+            "label": "Max Wind Gust Today",
+            "index": "71",
+            "field": "max_gust_current_day",
+            "value": "10.9"
+        },
+        {
+            "label": "DewPoint Temp",
+            "index": "72",
+            "field": "dew_point_temperature",
+            "value": "11.4"
+        },
+        {
+            "label": "Cloud Height",
+            "index": "73",
+            "field": "cloud_height",
+            "value": "6778.9"
+        },
+        {
+            "label": "Max Humidex",
+            "index": "75",
+            "field": "max_humidex",
+            "value": "34.5"
+        },
+        {
+            "label": "Min Humidex",
+            "index": "76",
+            "field": "min_humidex",
+            "value": "15.9"
+        },
+        {
+            "label": "Max Windchill",
+            "index": "77",
+            "field": "max_windchill",
+            "value": "30.7"
+        },
+        {
+            "label": "Min Windchill",
+            "index": "78",
+            "field": "min_windchill",
+            "value": "11.6"
+        },
+        {
+            "label": "Max Heat Index",
+            "index": "110",
+            "field": "max_heat_index",
+            "value": "30.3"
+        },
+        {
+            "label": "Min Heat Index",
+            "index": "111",
+            "field": "min_heat_index",
+            "value": "11.6"
+        },
+        {
+            "label": "Heat Index",
+            "index": "112",
+            "field": "heat_index",
+            "value": "27.3"
+        },
+        {
+            "label": "Max Avg Speed",
+            "index": "113",
+            "field": "max_average_windspeed_day",
+            "value": "7.8"
+        },
+        {
+            "label": "Current Year",
+            "index": "141",
+            "field": "year",
+            "value": "2015"
+        }
+    ]
+}

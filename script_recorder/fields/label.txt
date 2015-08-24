@@ -1,0 +1,48 @@
+Avg Speed
+Gusts
+WindDir
+Temp
+Outside Humidity
+Barometer
+Daily Rain
+Monthly Rain
+Yearly Rain
+Rain Rate
+Max Rain Rate
+Soil Temp
+Forecast Icon
+Yesterday Rain
+Extra Temp Sensor 1
+Extra Temp Sensor 2
+Extra Temp Sensor 3
+Extra Temp Sensor 4
+Extra Temp Sensor 5
+Extra Temp Sensor 6
+Extra Hum Sensor 1
+Extra Hum Sensor 2
+Extra Hum Sensor 3
+Hour
+Minute
+Seconds
+Solar Reading
+Day
+Month
+WindChill
+Humidex
+Max Day Temp
+Min Day Temp
+Icon Type
+Weather Desc
+Baro Trend
+Max Wind Gust Today
+DewPoint Temp
+Cloud Height
+Max Humidex
+Min Humidex
+Max Windchill
+Min Windchill
+Max Heat Index
+Min Heat Index
+Heat Index
+Max Avg Speed
+Current Year
